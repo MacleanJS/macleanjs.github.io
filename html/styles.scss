@@ -4,20 +4,26 @@
 
 * {
     // background-color: $pale-purple;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #330055;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23330055' cx='50' cy='0' r='50'/%3E%3Cg fill='%233a015d' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23410165' cx='50' cy='100' r='50'/%3E%3Cg fill='%2348026e' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23500376' cx='50' cy='200' r='50'/%3E%3Cg fill='%2357047e' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%235f0587' cx='50' cy='300' r='50'/%3E%3Cg fill='%2367068f' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%236f0798' cx='50' cy='400' r='50'/%3E%3Cg fill='%237707a0' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%238008a9' cx='50' cy='500' r='50'/%3E%3Cg fill='%238909b1' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%239109ba' cx='50' cy='600' r='50'/%3E%3Cg fill='%239a09c3' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a309cb' cx='50' cy='700' r='50'/%3E%3Cg fill='%23ad09d4' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b608dc' cx='50' cy='800' r='50'/%3E%3Cg fill='%23c007e5' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c905ee' cx='50' cy='900' r='50'/%3E%3Cg fill='%23d303f6' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23D0F' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
-    background-attachment: fixed;
-    background-size: contain;
+    font-family: helvetica;
     margin: 0;
 }
 
-//debug line
-.home-section {
-    border-bottom: 3px solid black;
+html {
+    scroll-behavior: smooth;
 }
 
+body {
+    background-color: #330055;
+    // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23330055' cx='50' cy='0' r='50'/%3E%3Cg fill='%233a015d' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23410165' cx='50' cy='100' r='50'/%3E%3Cg fill='%2348026e' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23500376' cx='50' cy='200' r='50'/%3E%3Cg fill='%2357047e' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%235f0587' cx='50' cy='300' r='50'/%3E%3Cg fill='%2367068f' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%236f0798' cx='50' cy='400' r='50'/%3E%3Cg fill='%237707a0' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%238008a9' cx='50' cy='500' r='50'/%3E%3Cg fill='%238909b1' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%239109ba' cx='50' cy='600' r='50'/%3E%3Cg fill='%239a09c3' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a309cb' cx='50' cy='700' r='50'/%3E%3Cg fill='%23ad09d4' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b608dc' cx='50' cy='800' r='50'/%3E%3Cg fill='%23c007e5' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c905ee' cx='50' cy='900' r='50'/%3E%3Cg fill='%23d303f6' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23D0F' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    // background-attachment: fixed;
+    // background-size: contain;
+    min-width: 375px;
+}
+
+//debug line
+
 .nav__header {
+    background-color: $pale-purple;
     padding: 10px 0px 10px 0px;
     border-bottom: 1px solid $pale-purple;
     text-align: right;
@@ -27,17 +33,29 @@
     @include mixins.tablet {
         text-align: center;
     }
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .nav__header > a {
     text-decoration: none;
-    color: $pale-purple;
+    color: $english-violet;
     margin: 2vw;
 }
 
 //home section
+.home-section {
+    @include mixins.desktop {
+        min-height: 700px;
+    }
+    @include mixins.laptop {
+        min-height: 700px;
+    }
+}
 .home-section__header-text {
-    margin: 10% 0% 0% 15%;
+    margin: 10% 0% 2% 15%;
+    padding-top: 40px;
     color: $pale-purple;
     @include mixins.phone {
         margin: 10% 0% 3% 0%;
@@ -49,12 +67,16 @@
         display: flex;
         justify-content: center;
     }
+    @include mixins.tablet-landscape {
+        margin: 10% 0% 2% 15%;
+    }
 }
 .home-section__div-wrap {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0% 15% 10% 15%;
+    padding-right: 30px;
     @include mixins.phone {
         flex-wrap: wrap;
     }
@@ -64,15 +86,17 @@
 }
 // Note: modify wrap once copy writing has been done
 .home-section__intro-para {
-    margin-left: 5%;
+    margin: 5% 0% 5% 5%;
     max-height: 300px;
+    min-width: 223px;
     color: $pale-purple;
+    font-size: 20px;
     @include mixins.phone {
-        margin: 0%;
+        margin: 5% 0% 0% 0%;
         max-width: 300px;
     }
     @include mixins.tablet {
-        margin: 0%;
+        margin: 5% 0% 0% 0%;
         max-width: 300px;
     }
 }
@@ -83,7 +107,6 @@
 
 //skill section
 .skills-section {
-    border-bottom: 2px solid black;
     color: $pale-purple;
 }
 
@@ -94,43 +117,64 @@
 
 .skills-section > h1 {
     padding: 10px;
+    padding-top: 40px;
     margin: 0px;
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .skills-section-list__div-1 {
     padding: 0px 10px 0px 10px;
     min-width: 240px;
+    margin-bottom: 200px;
+    max-width: 260px;
 }
 .skills-section-list__div-2 {
     padding: 0px 10px 0px 10px;
     min-width: 240px;
-    display: flex;
-    justify: left;
+    max-width: 260px;
 }
 .skills-section__list-1 {
     padding-right: 10px;
+    text-align: right;
+    max-width: 240px;
 }
 .skills-section__list-2 {
     padding-left: 10px;
+    max-width: 240px;
 }
 .skills-section__list-1 > ul {
     display: flex;
     justify-content: right;
     margin: 5px;
+    align-items: center;
+    font-size: 28px;
 }
 .skills-section__list-2 > ul {
     display: flex;
     justify-content: left;
     margin: 5px;
     padding-left: 0;
+    align-items: center;
+    font-size: 28px;
+}
+
+.list-1__icons {
+    min-width: 25px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.list-2__icons {
+    min-width: 25px;
+    margin-right: 10px;
+    display: flex;
 }
 
 //project section
 
 .project-section {
-    border: 2px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -149,20 +193,63 @@
 }
 
 .project-section__header-text {
-    padding: 10px;
+    padding: 20px 10px 10px 10px;
+    padding-top: 40px;
+    margin: 0px;
+    text-align: center;
+    color: $pale-purple;
+    font-size: 32px;
+}
+
+.project-section__project {
+    padding: 20px;
+    flex: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    i {
+        margin: 3px;
+    }
+}
+
+//contact section
+.contact-section__header-text {
+    padding: 200px 10px 10px 10px;
     margin: 0px;
     text-align: center;
     color: $pale-purple;
     font-size: 24px;
 }
 
-.project-section__project {
-    border: 2px solid black;
-    padding: 20px;
-    flex: 25vw;
+.contact-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    @include mixins.phone {
+        flex-wrap: wrap;
+    }
 }
 
-//contact section
+.contact-section__contact {
+    display: flex;
+    align-items: center;
+    color: $pale-purple;
+    font-weight: bold;
+    margin: 10px 10px 50px 10px;
+    @include mixins.phone {
+        margin-bottom: 0px;
+    }
+}
+
+.contact__icons {
+    margin: 5px;
+}
+
+a {
+    all: unset;
+}
+
+a:hover {
+    // color: $jordy-blue;
+    text-decoration: underline;
+}

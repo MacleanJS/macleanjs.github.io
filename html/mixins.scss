@@ -24,7 +24,7 @@
 }
 
 @mixin desktop {
-    @media only screen and (min-width: (breakpoints.$xl + 1px)) and (max-width: breakpoints.$xxl) {
+    @media only screen and (min-width: (breakpoints.$xl + 1px)) {
         @content;
     }
 }
