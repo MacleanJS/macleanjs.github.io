@@ -5,11 +5,11 @@
 
 html {
   scroll-behavior: smooth;
+  min-width: 375px;
 }
 
 body {
-  background-color: #330055;
-  min-width: 375px;
+  background: repeating-linear-gradient(-45deg, #4a4358, #4a4358 5.5px, #534b62 5.5px, #534b62 27.5px);
 }
 
 .nav__header {
@@ -17,6 +17,7 @@ body {
   padding: 10px 0px 10px 0px;
   border-bottom: 1px solid #e5d9e7;
   text-align: right;
+  box-shadow: 0 0 100px #707070;
   position: fixed;
   top: 0;
   width: 100%;
@@ -50,9 +51,10 @@ body {
 }
 
 .home-section__header-text {
-  margin: 10% 0% 2% 15%;
   padding-top: 40px;
   color: #e5d9e7;
+  margin: 10% 0% 2% 15%;
+  font-size: 32px;
 }
 @media only screen and (max-width: 576px) {
   .home-section__header-text {
@@ -138,6 +140,21 @@ body {
   min-width: 240px;
   margin-bottom: 200px;
   max-width: 260px;
+}
+@media only screen and (max-width: 576px) {
+  .skills-section-list__div-1 {
+    margin-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .skills-section-list__div-1 {
+    margin-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .skills-section-list__div-1 {
+    margin-bottom: 100px;
+  }
 }
 
 .skills-section-list__div-2 {
@@ -233,7 +250,7 @@ body {
   margin: 0px;
   text-align: center;
   color: #e5d9e7;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .contact-section {
@@ -251,7 +268,6 @@ body {
   display: flex;
   align-items: center;
   color: #e5d9e7;
-  font-weight: bold;
   margin: 10px 10px 50px 10px;
 }
 @media only screen and (max-width: 576px) {

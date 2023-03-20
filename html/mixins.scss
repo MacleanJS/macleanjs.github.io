@@ -1,4 +1,5 @@
 @use "breakpoints";
+
 @mixin phone {
     @media only screen and (max-width: breakpoints.$sm) {
         @content;

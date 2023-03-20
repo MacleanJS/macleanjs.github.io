@@ -1,44 +1,51 @@
+//Breakpoints used to define screen sizes
 @use "breakpoints";
+//Mixins used to specify how big each screen size is
 @use "mixins.scss";
+//Themese used to store theme/colour related variables
 @import "themes";
 
 * {
-    // background-color: $pale-purple;
+    //Font of entire site
     font-family: helvetica;
     margin: 0;
 }
 
 html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background-color: #330055;
-    // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23330055' cx='50' cy='0' r='50'/%3E%3Cg fill='%233a015d' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23410165' cx='50' cy='100' r='50'/%3E%3Cg fill='%2348026e' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23500376' cx='50' cy='200' r='50'/%3E%3Cg fill='%2357047e' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%235f0587' cx='50' cy='300' r='50'/%3E%3Cg fill='%2367068f' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%236f0798' cx='50' cy='400' r='50'/%3E%3Cg fill='%237707a0' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%238008a9' cx='50' cy='500' r='50'/%3E%3Cg fill='%238909b1' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%239109ba' cx='50' cy='600' r='50'/%3E%3Cg fill='%239a09c3' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a309cb' cx='50' cy='700' r='50'/%3E%3Cg fill='%23ad09d4' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b608dc' cx='50' cy='800' r='50'/%3E%3Cg fill='%23c007e5' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c905ee' cx='50' cy='900' r='50'/%3E%3Cg fill='%23d303f6' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23D0F' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
-    // background-attachment: fixed;
-    // background-size: contain;
+    scroll-behavior: smooth; //"animates" the scroll
     min-width: 375px;
 }
 
-//debug line
+body {
+    //background making stripe pattern
+    background: repeating-linear-gradient(
+        -45deg,
+        #4a4358,
+        #4a4358 5.5px,
+        #534b62 5.5px,
+        #534b62 27.5px
+    );
+}
 
 .nav__header {
     background-color: $pale-purple;
     padding: 10px 0px 10px 0px;
     border-bottom: 1px solid $pale-purple;
     text-align: right;
+    box-shadow: 0 0 100px #707070; //Adds light grey shadow underneath nav
     @include mixins.phone {
-        text-align: center;
+        text-align: center; //Centers text when pixels reaches phone limit
     }
     @include mixins.tablet {
-        text-align: center;
+        text-align: center; //Centers text when pixels reaches tablet limit
     }
-    position: fixed;
+    position: fixed; //fixes nav bar to top of screen when scrolling
     top: 0;
     width: 100%;
 }
 
 .nav__header > a {
+    //Removes underline and link styling from nav text
     text-decoration: none;
     color: $english-violet;
     margin: 2vw;
@@ -53,10 +60,13 @@ body {
         min-height: 700px;
     }
 }
+
 .home-section__header-text {
-    margin: 10% 0% 2% 15%;
     padding-top: 40px;
     color: $pale-purple;
+    margin: 10% 0% 2% 15%;
+    font-size: $main-header-size;
+    //mixins used to align text to center, instead of above photo, once pixel paramter is reached
     @include mixins.phone {
         margin: 10% 0% 3% 0%;
         display: flex;
@@ -77,6 +87,7 @@ body {
     justify-content: center;
     margin: 0% 15% 10% 15%;
     padding-right: 30px;
+    //wraps paragraph underneath photo when window/width is compressed
     @include mixins.phone {
         flex-wrap: wrap;
     }
@@ -84,7 +95,7 @@ body {
         flex-wrap: wrap;
     }
 }
-// Note: modify wrap once copy writing has been done
+
 .home-section__intro-para {
     margin: 5% 0% 5% 5%;
     max-height: 300px;
@@ -120,14 +131,24 @@ body {
     padding-top: 40px;
     margin: 0px;
     text-align: center;
-    font-size: 32px;
+    font-size: $main-header-size;
 }
 
 .skills-section-list__div-1 {
     padding: 0px 10px 0px 10px;
     min-width: 240px;
-    margin-bottom: 200px;
+    margin-bottom: 200px; //used to create gap between skill and project section
     max-width: 260px;
+    //used to change gap between skill and project section
+    @include mixins.phone {
+        margin-bottom: 100px;
+    }
+    @include mixins.tablet {
+        margin-bottom: 100px;
+    }
+    @include mixins.tablet-landscape {
+        margin-bottom: 100px;
+    }
 }
 .skills-section-list__div-2 {
     padding: 0px 10px 0px 10px;
@@ -144,22 +165,25 @@ body {
     max-width: 240px;
 }
 .skills-section__list-1 > ul {
+    //alligns text to right of container
     display: flex;
     justify-content: right;
     margin: 5px;
     align-items: center;
-    font-size: 28px;
+    font-size: $list-text;
 }
 .skills-section__list-2 > ul {
+    //alligns text to left of container
     display: flex;
     justify-content: left;
     margin: 5px;
     padding-left: 0;
     align-items: center;
-    font-size: 28px;
+    font-size: $list-text;
 }
 
 .list-1__icons {
+    //creates gap between text and icons
     min-width: 25px;
     margin-left: 10px;
     display: flex;
@@ -167,6 +191,7 @@ body {
 }
 
 .list-2__icons {
+    //creates gap between text and icons
     min-width: 25px;
     margin-right: 10px;
     display: flex;
@@ -180,7 +205,7 @@ body {
     justify-content: center;
     color: $pale-purple;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: row; //wraps images from 3 columns downward when space is compressed
 
     @include mixins.phone {
         margin: 0%;
@@ -198,7 +223,7 @@ body {
     margin: 0px;
     text-align: center;
     color: $pale-purple;
-    font-size: 32px;
+    font-size: $main-header-size;
 }
 
 .project-section__project {
@@ -208,7 +233,7 @@ body {
     flex-direction: column;
     align-items: center;
     i {
-        margin: 3px;
+        margin: 3px; //creates gap between icons and elements
     }
 }
 
@@ -218,7 +243,7 @@ body {
     margin: 0px;
     text-align: center;
     color: $pale-purple;
-    font-size: 24px;
+    font-size: $main-header-size;
 }
 
 .contact-section {
@@ -226,7 +251,7 @@ body {
     justify-content: center;
     margin-bottom: 5%;
     @include mixins.phone {
-        flex-wrap: wrap;
+        flex-wrap: wrap; //wraps list when width is compressed
     }
 }
 
@@ -234,7 +259,6 @@ body {
     display: flex;
     align-items: center;
     color: $pale-purple;
-    font-weight: bold;
     margin: 10px 10px 50px 10px;
     @include mixins.phone {
         margin-bottom: 0px;
@@ -242,14 +266,13 @@ body {
 }
 
 .contact__icons {
-    margin: 5px;
+    margin: 5px; //adds space between contact icons and text
 }
 
 a {
-    all: unset;
+    all: unset; //removes link styling
 }
 
 a:hover {
-    // color: $jordy-blue;
-    text-decoration: underline;
+    text-decoration: underline; //underlines links when hovered
 }
