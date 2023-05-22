@@ -39,6 +39,11 @@ body {
   margin: 2vw;
 }
 
+.nav__header > a:hover {
+  text-decoration: underline;
+  color: #94b7f0;
+}
+
 @media only screen and (min-width: 1201px) {
   .home-section {
     min-height: 700px;
@@ -52,7 +57,7 @@ body {
 
 .home-section__header-text {
   padding-top: 40px;
-  color: #e5d9e7;
+  color: #94b7f0;
   margin: 10% 0% 2% 15%;
   font-size: 32px;
 }
@@ -94,6 +99,11 @@ body {
   }
 }
 
+.home-section__intro-contact {
+  font-style: italic;
+  color: #94b7f0;
+}
+
 .home-section__intro-para {
   margin: 5% 0% 5% 5%;
   max-height: 300px;
@@ -133,6 +143,7 @@ body {
   margin: 0px;
   text-align: center;
   font-size: 32px;
+  color: #94b7f0;
 }
 
 .skills-section-list__div-1 {
@@ -204,6 +215,10 @@ body {
   display: flex;
 }
 
+.fa-github:hover {
+  color: #94b7f0;
+}
+
 .project-section {
   display: flex;
   align-items: center;
@@ -230,7 +245,7 @@ body {
   padding-top: 40px;
   margin: 0px;
   text-align: center;
-  color: #e5d9e7;
+  color: #94b7f0;
   font-size: 32px;
 }
 
@@ -245,11 +260,17 @@ body {
   margin: 3px;
 }
 
+.project-img {
+  width: 300px;
+  height: 300px;
+  border: 10px solid #4a4358;
+}
+
 .contact-section__header-text {
   padding: 200px 10px 10px 10px;
   margin: 0px;
   text-align: center;
-  color: #e5d9e7;
+  color: #94b7f0;
   font-size: 32px;
 }
 
